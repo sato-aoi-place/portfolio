@@ -8,11 +8,45 @@
   box-sizing: border-box;
 }
 
+nav li {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-bottom: 12%;
+}
+
+
+
+.container img{
+   width: 370px;
+  height: 370px;
+  object-fit: cover;
+}
+
+.container1 img{
+  width: 450px;
+}
+
+.aboutme {
+  text-align: center;
+  padding-bottom: 250px;
+  padding-top: 200px;
+  font-size: 1rem;
+}
+
+h5 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
 img {
   width: 100%;
   height: auto;
   vertical-align: bottom;
 }
+
+
 
 body {
   font-family: 'Arial', sans-serif;
@@ -40,116 +74,20 @@ header {
 
 header h1 {
   text-align: center;
-  padding: 1rem;
-  font-size: 2rem;
+ /* padding: 1rem;*/
+  padding-top: 1%;
+  padding-bottom: 1%;
+
 }
+
+
 
 header h1 a {
-  color: #333;
+  color: #0c0c0c;
 }
 
-#navBtn {
-  display: none;
-}
 
-.open {
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: block;
-  z-index: 100;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #CCC;
-  border-radius: 2px;
-}
 
-/*humburger button*/
-
-.open::before,
-.open::after {
-  content: "";
-}
-
-.open span,
-.open::before,
-.open::after {
-  content: "";
-  position: absolute;
-  top: 18px;
-  left: 30%;
-  width: 40%;
-  border-bottom: 2px solid #333;
-  transition: transform .5s;
-}
-
-.open::before {
-  transform: translateY(-8px);
-}
-
-.open::after {
-  transform: translateY(8px);
-}
-
-/*close button*/
-#navBtn:checked + .open {
-  background: #555;
-}
-
-#navBtn:checked + .open span {
-  transform: scaleX(0);
-}
-
-#navBtn:checked + .open::before {
-  transform: rotate(45deg);
-}
-
-#navBtn:checked + .open::after {
-  transform: rotate(-45deg);
-}
-
-#navBtn:checked + .open span,
-#navBtn:checked + .open::before,
-#navBtn:checked + .open::after {
-  border-bottom-color: #EEE;
-}
-
-nav {
-  /* display: none; */
-  height: 100vh;
-  width: 300px;
-  position: absolute;
-  top: 0;
-  right: -300px;
-  z-index: 50;
-  background-color: rgba(0, 0, 0, .5);
-  transition: transform .5s;
-}
-
-#navBtn:checked ~ nav {
-  display: block;
-  transform: translateX(-300px);
-}
-
-nav ul {
-  list-style: none;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-nav ul li {
-  /* display: inline-block; */
-  margin: 0 10px;
-  padding: 10px 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #333;
-  color: #EEE;
-}
 
 /* main contents */
 main {
@@ -170,6 +108,17 @@ section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  padding-bottom: 10%;
+}
+
+.container-w1{
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.container-w1 img{
+width:400px ;
+padding-right: 3%;
 }
 
 /* footer */
@@ -179,6 +128,19 @@ footer {
   text-align: center;
   padding: 1rem;
   width: 100%;
+}
+
+.container-w img {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+.setumei{
+
+  text-align: center;
+  padding: 60px;
+
 }
 
 /*タブレット用*/
@@ -194,29 +156,38 @@ footer {
     font-size: 4rem;
   }
 
-  nav {
+ 
+
+  .container-w{
+    display: flex;
+  }
+   .container-w  img{
+    width: 50%;
+   }
+
+  .Work img {
+    /*display: flex;
+    justify-content: center;*/
+    margin: auto;
     display: block;
-    height: auto;
-    width: 100%;
-    position: static;
-    background-color: transparent;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    padding: 0;
+    width: 1000px;
+   padding-bottom: 70px;
   }
 
-  nav ul li a {
-    color: #333;
+  .top img{
+    height: 700px;
+    object-fit: cover;
+
   }
 
-  #navBtn,
-  .open {
-    display: none;
-  }
-
+ 
   .container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .aboutme{
+    padding-bottom: 30px;
+  }
+
+  
 }
