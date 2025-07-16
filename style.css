@@ -160,6 +160,16 @@ footer {
   padding-bottom: 30px;
 }
 
+.Work img {
+    /*display: flex;
+    justify-content: center;*/
+        width: auto;
+    height: 1000px;
+    margin: auto;
+    display: block;
+   padding-bottom: 70px;
+  }
+
 
 }
 
@@ -184,9 +194,10 @@ footer {
   .Work img {
     /*display: flex;
     justify-content: center;*/
+        width: auto;
+    height: 1100px;
     margin: auto;
     display: block;
-    width: 1000px;
    padding-bottom: 70px;
   }
   
@@ -209,6 +220,7 @@ footer {
   font-size: 1rem;
   font-weight: 350;
   }
+
 
   .w6 img{
     width: auto;
